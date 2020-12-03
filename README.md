@@ -40,3 +40,6 @@ Images captures from [minc dataset](http://opensurfaces.cs.cornell.edu/publicati
   year={2015}
 }
 ```
+
+## Contact and Contribution
+Feel free to contact me dulucas24@gmail.com, any contribution is welcome.
