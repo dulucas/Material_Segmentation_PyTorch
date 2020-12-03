@@ -279,7 +279,7 @@ class googlenet(nn.Module):
 
 if __name__ == "__main__":
     f = googlenet()
-    f.load_state_dict(torch.load('minc-googlenet.pth'), strict=False)
+    f.load_state_dict(torch.load('../weights/minc-googlenet.pth'), strict=False)
     f.cuda()
     f.eval()
     torch.set_grad_enabled(False)
@@ -287,9 +287,7 @@ if __name__ == "__main__":
     import cv2
     import numpy as np
 
-    #img = cv2.imread('example.jpg')
-    img = cv2.imread('/home/duy/phd/lucasdu/duy/material/photos/10.jpg')
-    #img_ori = cv2.resize(img, (224, 224))
+    img = cv2.imread('xxx')
     img_ori = img[900:1156, 600:856, :]
     img = img_ori.astype(np.float32)
     img = img.transpose(2,0,1)
