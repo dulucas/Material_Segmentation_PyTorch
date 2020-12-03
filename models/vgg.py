@@ -98,7 +98,7 @@ class vgg16(nn.Module):
 
 if __name__ == '__main__':
     f = vgg16()
-    weights = torch.load('minc-vgg16.pth')
+    weights = torch.load('../minc-vgg16.pth')
     f.load_state_dict(weights, strict=False)
     f.cuda()
     f.eval()
@@ -107,10 +107,8 @@ if __name__ == '__main__':
     import cv2
     import numpy as np
 
-    #img = cv2.imread('example.jpg')
-    img = cv2.imread('/home/duy/phd/lucasdu/duy/material/photos/10.jpg')
+    img = cv2.imread('xxx')
     print(img.shape)
-    #img_ori = cv2.resize(img, (224, 224))
     img_ori = img[900:1156, 600:856, :]
     img = img_ori.astype(np.float32)
     img = img.transpose(2,0,1)
