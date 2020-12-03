@@ -3,7 +3,7 @@ This is an unofficial implementation of this [paper](http://labelmaterial.s3.ama
 
 This repo provides codes to convert their original Caffe model to PyTorch, and re-implement three key components mentioned in the paper:
   - DenseCRF
-  - Shift-pooling
+  - Shift-Pooling
   - LRN(local response normalization in Googlenet). 
   
 Note that the denseCRF used here is RGB based and the hyper-parameters are arbitrarily copied from this [repo](https://github.com/kazuto1011/deeplab-pytorch). Please check [here](https://www.philkr.net/code/) if you want to use the denseCRF mentioned in the paper
