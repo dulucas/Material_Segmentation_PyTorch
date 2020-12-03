@@ -21,7 +21,7 @@ f['conv_fc6.weight'] = f['fc6.weight'].squeeze().view(4096,512,7,7)
 f['conv_fc6.bias'] = f['fc6.bias'].squeeze()
 ```
 
-An example of Googlenet after conversion is provided. Note that the Alexnet provided by the authors is not usable.
+An example of Googlenet after conversion is [provided](https://github.com/dulucas/material_prediction_pytorch/tree/main/weights). Note that the Alexnet provided by the authors is not usable.
 
 ## Examples
 Images captures from [minc dataset](http://opensurfaces.cs.cornell.edu/publications/minc/) and [Ycb dataset](https://www.ycbbenchmarks.com/)
