@@ -4,6 +4,7 @@ This repo provides codes to convert their original Caffe model into PyTorch, and
   - the denseCRF
   - shift-pooling
   - LRN(local response normalization in Googlenet). 
+  
 Note that the denseCRF used here is RGB based and the hyper-parameters are arbitrarily copied from this [repo](https://github.com/kazuto1011/deeplab-pytorch). Please check [here](https://www.philkr.net/code/) if you want to use the denseCRF mentioned in the paper
 
 ## Requirement
