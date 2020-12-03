@@ -120,8 +120,7 @@ if __name__ == '__main__':
     m0.cuda().eval()
 
     torch.set_grad_enabled(False)
-    #img_paths = glob.glob('/home/duy/phd/lucasdu/duy/material/photos/*')
-    img_paths = glob.glob('/home/duy/phd/lucasdu/duy/material/ycb/test/000055/rgb/*')
+    img_paths = glob.glob('xxx')
     labels = open('categories.txt', 'r').readlines()
     labels = [i.strip() for i in labels]
 
