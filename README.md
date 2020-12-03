@@ -1,6 +1,7 @@
 # Material Estimation
 This is an unofficial implementation of this [paper](http://labelmaterial.s3.amazonaws.com/release/cvpr2015-minc.pdf) for material estimation. The authors has provided their model weights in Caffe while not the code for inference(which requires denseCRF for post processing). 
-This repo provides codes to convert their original Caffe model into PyTorch, and re-implement three key components mentioned in the paper:
+
+This repo provides codes to convert their original Caffe model to PyTorch, and re-implement three key components mentioned in the paper:
   - DenseCRF
   - Shift-pooling
   - LRN(local response normalization in Googlenet). 
@@ -13,7 +14,7 @@ Note that the denseCRF used here is RGB based and the hyper-parameters are arbit
 - opencv
 
 ## Model Convertion
-Please use this [repo](https://github.com/vadimkantorov/caffemodel2pytorch) to convert the Caffe model into PyTorch. After the convertion, remember to squeeze the dimension of bias(from (1,1,1,K) -> (K)) and convert the fully connected layers to convolutional layers. Code example:
+Please use this [repo](https://github.com/vadimkantorov/caffemodel2pytorch) to convert the Caffe model to PyTorch. After the convertion, remember to squeeze the dimension of bias(from (1,1,1,K) -> (K)) and convert the fully connected layers to convolutional layers. Code example:
 
 ```
 # Assuming that fc6.weight.size() == (1,1,4096,25088)
