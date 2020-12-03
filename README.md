@@ -26,7 +26,7 @@ An example of Googlenet after conversion is [provided](https://github.com/duluca
 
 ## Examples
 Images captures from [minc dataset](http://opensurfaces.cs.cornell.edu/publications/minc/) and [Ycb dataset](https://www.ycbbenchmarks.com/)
-| RGB Input | Material Prediction |
+| RGB Input | Material Segmentation |
 | ------------- | ------------- |
 | ![Material Estimation](./examples/RGB_ycb.png)  | ![Material Estimation](./examples/Material_ycb.png)  |
 | ![Material Estimation](./examples/RGB_minc.png)  | ![Material Estimation](./examples/Material_minc.png)  |
