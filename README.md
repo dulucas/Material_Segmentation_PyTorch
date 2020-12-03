@@ -18,7 +18,9 @@ f['conv_fc6.bias'] = f['fc6.bias'].squeeze()
 An example of Googlenet after conversion is provided. Note that the Alexnet provided by the authors is not usable.
 
 ## Examples
-
+| RGB Input | Material Prediction |
+| ------------- | ------------- |
+| ![Material Estimation](./examples/RGB.png)  | ![Material Estimation](./examples/Material.png)  |
 
 ## Citation
 ```bash
