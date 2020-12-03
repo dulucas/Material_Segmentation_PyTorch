@@ -6,6 +6,20 @@ This is an unofficial implementation of this [paper](http://labelmaterial.s3.ama
 - [pytorch](https://pytorch.org/)
 - opencv
 
+## Model Convertion
+Please use this [repo](https://github.com/vadimkantorov/caffemodel2pytorch) to convert the Caffe model into PyTorch. After the convertion, remember to squeeze the dimension of bias(from (1,1,1,K) -> (K)) and convert the fully connected layers to convolutional layers. Code example:
+
+```
+# Assuming that fc6.weight.size() == (1,1,4096,25088)
+f['conv_fc6.weight'] = f['fc6.weight'].squeeze().view(4096,512,7,7)
+f['conv_fc6.bias'] = f['fc6.bias'].squeeze()
+```
+
+An example of Googlenet after conversion is provided. Note that the Alexnet provided by the authors is not usable.
+
+## Examples
+
+
 ## Citation
 ```bash
 @inproceedings{bell2015material,
@@ -16,5 +30,3 @@ This is an unofficial implementation of this [paper](http://labelmaterial.s3.ama
   year={2015}
 }
 ```
-
-## Examples
