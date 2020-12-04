@@ -28,6 +28,7 @@ Images captures from [minc dataset](http://opensurfaces.cs.cornell.edu/publicati
 | RGB Input | Material Prediction |
 | ------------- | ------------- |
 | ![Material Estimation](./examples/RGB_ycb.png)  | ![Material Estimation](./examples/Material_ycb.png)  |
+| ![Material Estimation](./examples/RGB_minc.png)  | ![Material Estimation](./examples/Material_minc.png)  |
 
 ## Citation
 ```bash
