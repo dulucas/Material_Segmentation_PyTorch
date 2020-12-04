@@ -27,7 +27,7 @@ An example of Googlenet after conversion is provided. Note that the Alexnet prov
 Images captures from [minc dataset](http://opensurfaces.cs.cornell.edu/publications/minc/) and [Ycb dataset](https://www.ycbbenchmarks.com/)
 | RGB Input | Material Prediction |
 | ------------- | ------------- |
-| ![Material Estimation](./examples/RGB.png)  | ![Material Estimation](./examples/Material.png)  |
+| ![Material Estimation](./examples/RGB_ycb.png)  | ![Material Estimation](./examples/Material_ycb.png)  |
 
 ## Citation
 ```bash
