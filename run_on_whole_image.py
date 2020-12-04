@@ -1,6 +1,6 @@
 import glob
-from vgg import vgg16
-from googlenet import googlenet
+from models.vgg import vgg16
+from models.googlenet import googlenet
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -11,7 +11,7 @@ import torch.nn as nn
 import pydensecrf.densecrf as dcrf
 import pydensecrf.utils as utils
 
-color_palette = np.loadtxt('/home/duy/phd/tmp_half/libs/palette.txt').astype(np.uint8)
+color_palette = np.loadtxt('./palette.txt').astype(np.uint8)
 
 def color_image_w_masks(image, masks):
     image = image.astype(np.uint8)
