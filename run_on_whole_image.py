@@ -136,7 +136,7 @@ if __name__ == '__main__':
     for i in range(10):
         img_path = np.random.choice(img_paths)
         img = cv2.imread(img_path)
-        img = cv2.resize(img, (1024, 1024))
+        img = cv2.resize(img, (512, 512))
 
         prob0 = multi_scale_inference(img, m0)
         #prob1 = multi_scale_inference(img, m1)
